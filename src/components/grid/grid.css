@@ -1,0 +1,54 @@
+.game__board .column {
+  position: absolute;
+  width: 13.45%;
+  height: 100%;
+  top: 0;
+}
+
+.game__board .column-1 {
+  left: 1.58%;
+}
+
+.game__board .column-2 {
+  left: 15.5%;
+}
+
+.game__board .column-3 {
+  left: 29.43%;
+}
+
+.game__board .column-4 {
+  left: 43.35%;
+}
+
+.game__board .column-5 {
+  left: 57.28%;
+}
+
+.game__board .column-6 {
+  left: 71.2%;
+}
+
+.game__board .column-7 {
+  left: 85.12%;
+}
+
+.disk {
+  position: absolute;
+  z-index: -1;
+  width: 11.08%;
+  height: 11.98%;
+}
+
+.marker {
+  position: absolute;
+  top: -40px;
+  width: 40px;
+  height: 40px;
+}
+
+.winner-circle {
+  position: absolute;
+  height: 6.33%;
+  width: 6.85%;
+}
