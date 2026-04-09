@@ -11,6 +11,12 @@ export default [
     ignores: ["dist/**", "**/*.test.js"], // Ignore all files inside dist
   },
   {
+    files: ["vite.config.js"],
+    languageOptions: {
+      globals: { ...globals.browser, ...globals.node },
+    },
+  },
+  {
     languageOptions: {
       globals: globals.browser,
     },
@@ -18,6 +24,11 @@ export default [
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
     // Disable the 'react/react-in-jsx-scope' rule for React 17+
     rules: {
       "react/react-in-jsx-scope": "off", // Disable rule for React in scope

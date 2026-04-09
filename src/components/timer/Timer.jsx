@@ -20,7 +20,6 @@ const Timer = ({
     timerCounter === 0 && player === 2 && setWhoWins(1, false);
 
     return () => clearInterval(timer);
-    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timerCounter, pause]);
 
   return (
